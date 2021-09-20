@@ -19,6 +19,7 @@
 		<link rel="mask-icon" href="structured_data/safari_pinned_tab.svg" color="#5c21b5">
 		<!--CSS -->
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -43,7 +44,7 @@
 
 				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
 					<h2 class="display-6 fw-normal">World tour</h1>
-					<!--<p class="fs-5 text-muted">The wristband is the cheapest way to join freshers events. Grab a package including discounted Central and students’ union merchandise. Per-event tickets are available for some events and guests.</p>-->
+					<p class="fs-5 text-muted">The wristband is the cheapest way to join freshers events. Grab a package including discounted Central and students’ union merchandise. Per-event tickets are available for some events and guests.</p>
 				</div>
 
 				<div class="row g-5">
@@ -60,9 +61,9 @@
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
 									<h6 class="my-0">Central T-shirt</h6>
-									<small class="text-muted">Your official Central T-shirt, featuring embroidered logo.</small>
+									<small class="text-muted">Your official Central T-shirt, featuring an embroidered logo.</small>
 								</div>
-								<span class="text-muted">£8</span>
+								<span class="text-muted">£9</span>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
@@ -74,19 +75,49 @@
 							<li class="list-group-item d-flex justify-content-between bg-light">
 								<div class="text-success">
 									<h6 class="my-0">Discount</h6>
-									<small>Package discount</small>
+									<small>World tour package discount</small>
 								</div>
-								<span class="text-success">−£4</span>
+								<span class="text-success">−£5</span>
 							</li>
 							<li class="list-group-item d-flex justify-content-between">
 								<span>Total (GBP)</span>
 								<strong>£40</strong>
 							</li>
 						</ul>
+						<div class="col d-flex align-items-start">
+							<div class="text-danger flex-shrink-0 me-1">
+								<i class="bi bi-exclamation-circle-fill me-1"></i>
+							</div>
+							<div class="text-danger">The world tour package is for current Central students only.</div>
+						</div>
 					</div>
+
 					<div class="col-md-7 col-lg-8">
-						<form>
+						<h4 class="mb-3">Attendee details</h4>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="6ADCVPVMNBWDG">
+
+							<div class="row g-3">
+								<div class="col-12">
+									<input type="hidden" name="on0" value="Name">
+									<label for="worldtourName" class="form-label">Name</label>
+									<input type="text" name="os0" maxlength="200" placeholder="Judi Dench" class="form-control" id="worldtourName" aria-describedby="worldtourNameHelp">
+									<div class="form-text" id="worldtourNameHelp">If you’re ordering for someone else, this should be their name.</div>
+								</div>
+								<div class="col-12">
+									<input type="hidden" name="on1" value="Student number">
+									<label for="worldtourStuNum" class="form-label">Student number</label>
+									<input type="text" name="os1" maxlength="6" placeholder="183631" class="form-control" id="worldtourStuNum" aria-describedby="worldtourStuNumHelp">
+									<div class="form-text" id="worldtourStuNumHelp">If you’re ordering for someone else, this should be their student number.</div>
+								</div>
+								<hr class="my-4">
+								<button class="btn btn-primary btn-lg w-100" name="submit" alt="Continue to checkout">Continue to checkout</button>
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+							</div>
 						</form>
+
+						<p class="col-md-12 small text-muted">Your payment will be processed securely by PayPal under their <a href="https://www.paypal.com/uk/webapps/mpp/ua/servicedescription-full?locale.x=en_GB" target="_blank">terms of use</a> and <a href="https://www.paypal.com/uk/webapps/mpp/ua/privacy-full?locale.x=en_GB" target="_blank">privacy statement</a>. You do not need a PayPal account, as debit and credit cards are also accepted. Your financial details won’t be shared with us.</p>
 					</div>
 				</div>
 
