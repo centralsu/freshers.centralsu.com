@@ -1,3 +1,9 @@
+:root {
+	--bs-blue:  #5c21b5;
+	--special-green:  #cfff00;
+	--special- pink:  #ee3ec9;
+}
+
 .bi {
   /* vertical-align: -.125em; Not needed for <i> tags */
   fill: currentColor;
@@ -27,4 +33,12 @@
 }
 .icon-link:hover > .bi {
   transform: translate(.25rem);
+}
+
+.bg-special-purple {
+	background-color: var(--special-purple);
+}
+
+.border-special-purple {
+	border-color:  var(--special-purple);
 }
