@@ -1,7 +1,8 @@
 :root {
-	--bs-blue:  #5c21b5;
+	--special-purple:  #5c21b5;
 	--special-green:  #cfff00;
-	--special- pink:  #ee3ec9;
+	--special-pink:  #ee3ec9;
+	--special-orange:  #ef7937;
 }
 
 .bi {
@@ -41,4 +42,14 @@
 
 .border-special-purple {
 	border-color:  var(--special-purple);
+}
+
+.cone-icon {
+	color: var(--special-purple);
+	/* stroke: var(--special-purple);
+	stroke-width: 0.2px; */
+}
+
+.cone-icon-text {
+	color: var(--bs-dark);
 }
