@@ -5,10 +5,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Structured data tags -->
-		<title>UK tour package – Refreshers 2021</title>
+		<title>Pub crawl – Refreshers 2021</title>
 		<meta name="description" content="An action-packed fortnight with something for everyone, from Central Students’ Union.">
 		<meta name="author" content="Central Students’ Union">
-		<meta property="og:title" content="UK tour package">
+		<meta property="og:title" content="Pub crawl">
 		<meta property="og:description" content="An action-packed fortnight with something for everyone, from Central Students’ Union.">
 		<meta property="og:url" content="https://freshers.centralsu.com">
 		<meta property="og:locale" content="en_GB">
@@ -53,8 +53,8 @@
 				</div>-->
 
 				<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-					<h2 class="display-6 fw-normal">UK tour package</h1>
-					<p class="fs-5 text-muted">Join the tour bus with our premium Refreshers package. Get your access all areas pass to every event with a discount on our official Central-branded T-shirt.</p>
+					<h2 class="display-6 fw-normal">Pub crawl tickets</h1>
+					<p class="fs-5 text-muted">Wristband not for you? Pre-order here to grab your ticket for just the pub crawl with all the same free shots and drink offers.</p>
 				</div>
 
 				<div class="row g-5">
@@ -63,35 +63,21 @@
 						<ul class="list-group mb-3">
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
-									<h6 class="my-0">Wristband</h6>
-									<small class="text-muted">The access all areas pass to every Refreshers event.</small>
+									<h6 class="my-0">Pub crawl ticket</h6>
+									<small class="text-muted">Gets you access to the pub crawl only.</small>
 								</div>
-								<span class="text-muted">£30</span>
-							</li>
-							<li class="list-group-item d-flex justify-content-between lh-sm">
-								<div>
-									<h6 class="my-0">Central T-shirt</h6>
-									<small class="text-muted">Your official Central T-shirt, featuring an embroidered logo.</small>
-								</div>
-								<span class="text-muted">£9</span>
-							</li>
-							<li class="list-group-item d-flex justify-content-between bg-light">
-								<div class="text-success">
-									<h6 class="my-0">Discount</h6>
-									<small>UK tour package discount</small>
-								</div>
-								<span class="text-success">−£3</span>
+								<span class="text-muted">£12</span>
 							</li>
 							<li class="list-group-item d-flex justify-content-between">
 								<span>Total (GBP)</span>
-								<strong>£36</strong>
+								<strong>£12</strong>
 							</li>
 						</ul>
 						<div class="col d-flex align-items-start">
 							<div class="text-danger flex-shrink-0 me-1">
 								<i class="bi bi-exclamation-circle-fill me-1"></i>
 							</div>
-							<div class="text-danger">The UK tour package is for current Central students only.</div>
+							<div class="text-danger">Guests need to be accompanied by a current Central student.</div>
 						</div>
 					</div>
 
@@ -99,20 +85,28 @@
 						<h4 class="mb-3">Attendee details</h4>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="3T6JFVRLT83QN">
+							<input type="hidden" name="hosted_button_id" value="NUATZV5QDKCLG">
 
 							<div class="row g-3">
 								<div class="col-12">
-									<input type="hidden" name="on0" value="Name">
-									<label for="uktourName" class="form-label">Name</label>
-									<input type="text" name="os0" maxlength="200" placeholder="Judi Dench" class="form-control" id="uktourName" aria-describedby="uktourNameHelp">
-									<div class="form-text" id="uktourNameHelp">If you’re ordering for someone else, this should be their name.</div>
+									<input type="hidden" name="on0" value="Status">
+									<label for="pubcrawlStatus" class="form-label">Student or guest?</label>
+									<select name="os0" class="form-select" id="pubcrawlStatus">
+										<option value="Central student">Central student</option>
+										<option value="Guest">Guest</option>
+									</select>
 								</div>
 								<div class="col-12">
-									<input type="hidden" name="on1" value="Student number">
-									<label for="uktourStuNum" class="form-label">Student number</label>
-									<input type="text" name="os1" maxlength="6" placeholder="123456" class="form-control" id="uktourStuNum" aria-describedby="uktourStuNumHelp">
-									<div class="form-text" id="uktourStuNumHelp">If you’re ordering for someone else, this should be their student number.</div>
+									<input type="hidden" name="on1" value="Name">
+									<label for="pubcrawlName" class="form-label">Name</label>
+									<input type="text" name="os1" maxlength="200" placeholder="Judi Dench" class="form-control" id="pubcrawlName" aria-describedby="pubcrawlNameHelp">
+									<div class="form-text" id="pubcrawlNameHelp">This should be the name of the person coming to the crawl.</div>
+								</div>
+								<div class="col-12">
+									<input type="hidden" name="on2" value="Student number">
+									<label for="pubcrawlStuNum" class="form-label">Student number</label>
+									<input type="text" name="os2" maxlength="6" placeholder="123456" class="form-control" id="pubcrawlStuNum" aria-describedby="pubcrawlStuNumHelp">
+									<div class="form-text" id="pubcrawlStuNumHelp">If you’re a guest, this should be your friend’s Central student number.</div>
 								</div>
 								<hr class="my-4">
 								<button class="btn btn-info text-white btn-lg w-100" name="submit" alt="Continue to checkout">Continue to checkout</button>
