@@ -32,8 +32,11 @@
   transition: transform .25s ease-in-out;
   fill: currentColor;
 }
-.icon-link:hover > .bi {
+.icon-link-fwd:hover > .bi {
   transform: translate(.25rem);
+}
+.icon-link-back:hover > .bi {
+  transform: translate(-.25rem);
 }
 
 .bg-special-purple {
