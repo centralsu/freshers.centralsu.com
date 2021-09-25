@@ -53,3 +53,7 @@
 .cone-icon-text {
 	color: var(--bs-dark);
 }
+
+.disabled-anchor {
+	pointer-events: none;
+}
