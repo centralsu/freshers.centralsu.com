@@ -13,30 +13,31 @@ window.onload = function () {
     var wednesdayShowStart  = new Date(Date.UTC(2020, 11, 3, 18, 50));
     var wednesdayShowEnd    = new Date(Date.UTC(2020, 11, 3, 20, 20));
 
+    var ticketRelease       = new Date(Date.UTC(2022, 9, 16, 0, 0));
+
     function update() {
 
         var now = Date.now();
 
         var duringTest      = (now > testPeriodStart && now < testPeriodEnd);
         var duringMonday    = (now > mondayShowStart && now < mondayShowEnd);
-        var duringTuesday   = (now > tuesdayShowStart && now < tuesdayShowEnd)
-        var duringWednesday = (now > wednesdayShowStart && now < wednesdayShowEnd)
+        var duringTuesday   = (now > tuesdayShowStart && now < tuesdayShowEnd);
+        var duringWednesday = (now > wednesdayShowStart && now < wednesdayShowEnd);
+        var afterRelease    = (now > ticketRelease);
 
         // During one of the shows?
-        if  (duringTest || duringMonday || duringTuesday || duringWednesday) {
+        if  (duringTest || duringMonday || duringTuesday || duringWednesday || afterRelease) {
             // This runs every few seconds during the show
-            document.getElementById("countdown-container").style.visibility='hidden';
-            document.getElementById("video-container").style.visibility='visible';
-            document.getElementById("header-text").style.visibility='visible';
+            document.getElementById("eb-timing-container").style.visibility='hidden';
+            document.getElementById("ga-timing-container").style.visibility='visible';
             
             console.log("Show running.")
         }
 
         // Not during a show?
         else {
-            document.getElementById("countdown-container").style.visibility='visible';
-            document.getElementById("video-container").style.visibility='hidden';
-            document.getElementById("header-text").style.visibility='hidden';
+            document.getElementById("eb-timing-container").style.visibility='visible';
+            document.getElementById("ga-timing-container").style.visibility='hidden';
 
             console.log("Show not running.")
         }
