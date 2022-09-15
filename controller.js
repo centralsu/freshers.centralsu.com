@@ -37,7 +37,7 @@ window.onload = function () {
         // Not during a show?
         else {
             document.getElementById("eb-timing-container").style.display='inherit';
-            document.getElementById("ga-timing-container").style.visibility='none';
+            document.getElementById("ga-timing-container").style.display='none';
 
             console.log("Show not running.")
         }
