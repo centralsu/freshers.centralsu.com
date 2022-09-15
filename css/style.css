@@ -68,12 +68,48 @@ a.ignore-link-style {
 	color: inherit;
 }
 
+a {
+	color: var(--central-purple) !important;
+}
+
+a:hover {
+	color: var(--central-pink) !important;
+}
+
 .bg-special-purple {
 	background-color: var(--central-purple);
 }
 
+.bg-special-pink {
+	background-color: var(--central-pink);
+}
+
+.bg-special-green {
+	background-color: var(--central-green);
+}
+
 .border-special-purple {
 	border-color:  var(--central-purple);
+}
+
+.border-special-pink {
+	border-color:  var(--central-pink);
+}
+
+.border-special-green {
+	border-color:  var(--central-green);
+}
+
+.text-special-purple {
+	color: var(--central-purple);
+}
+
+.text-special-pink {
+	color: var(--central-pink);
+}
+
+.text-special-green {
+	color: var(--central-green);
 }
 
 .cone-icon {
