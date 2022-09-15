@@ -13,7 +13,7 @@ window.onload = function () {
     var wednesdayShowStart  = new Date(Date.UTC(2020, 11, 3, 18, 50));
     var wednesdayShowEnd    = new Date(Date.UTC(2020, 11, 3, 20, 20));
 
-    var ticketRelease       = new Date(Date.UTC(2022, 9, 16, 0, 0));
+    var ticketRelease       = new Date(Date.UTC(2022, 9, 15, 23, 10));
 
     function update() {
 
