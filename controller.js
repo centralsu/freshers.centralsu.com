@@ -28,16 +28,16 @@ window.onload = function () {
         // During one of the shows?
         if  (duringTest || duringMonday || duringTuesday || duringWednesday || afterRelease) {
             // This runs every few seconds during the show
-            document.getElementById("eb-timing-container").style.visibility='hidden';
-            document.getElementById("ga-timing-container").style.visibility='visible';
+            document.getElementById("eb-timing-container").style.display='none';
+            document.getElementById("ga-timing-container").style.display='inherit';
             
             console.log("Show running.")
         }
 
         // Not during a show?
         else {
-            document.getElementById("eb-timing-container").style.visibility='visible';
-            document.getElementById("ga-timing-container").style.visibility='hidden';
+            document.getElementById("eb-timing-container").style.display='inherit';
+            document.getElementById("ga-timing-container").style.visibility='none';
 
             console.log("Show not running.")
         }
