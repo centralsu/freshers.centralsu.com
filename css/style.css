@@ -1,8 +1,33 @@
 :root {
-	--special-purple:  #b04ec4;
-	--special-green:  #93d50a;
-	--special-pink:  #f05097;
-	--special-orange:  #fe6b00;
+	--central-darkblue: #216093;
+	--central-red: #dc0714;
+	--central-green: #43a756;
+	--central-purple: #b04ec4;
+	--central-grey: #b2b2b2;
+	--central-pink: #f05097;
+	--central-green: #93d50a;
+	--central-orange: #fe6b00;
+	--central-yellow: #f8d000;
+	--central-blue: #00b2e2;
+
+	--background-light: ;
+	--background-dark: ;
+
+	--text-light: ;
+	--text-dark: ;
+	--muted-light: ;
+	--muted-dark: ;
+
+	--link-light: ;
+	--link-dark: ;
+	--hover-light: ;
+	--hover-dark: ;
+
+	--live-background: var(--background-light);v
+	--live-text: var(--text-light);
+	--live-muted: var(--muted-light);
+	--live-link: var(--link-light);
+	--live-hover: var(--hover-light);
 }
 
 .bi {
@@ -39,16 +64,20 @@
   transform: translate(-.25rem);
 }
 
+a.ignore-link-style {
+	color: inherit;
+}
+
 .bg-special-purple {
-	background-color: var(--special-purple);
+	background-color: var(--central-purple);
 }
 
 .border-special-purple {
-	border-color:  var(--special-purple);
+	border-color:  var(--central-purple);
 }
 
 .cone-icon {
-	color: var(--special-purple);
+	color: var(--central-purple);
 	/* stroke: var(--special-purple);
 	stroke-width: 0.2px; */
 }
