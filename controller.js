@@ -13,7 +13,7 @@ window.onload = function () {
     var wednesdayShowStart  = new Date(Date.UTC(2020, 11, 3, 18, 50));
     var wednesdayShowEnd    = new Date(Date.UTC(2020, 11, 3, 20, 20));
 
-    var ticketRelease       = new Date(Date.UTC(2022, 9, 15, 23, 10));
+    var ticketRelease       = new Date(Date.UTC(2022, 9, 15, 23, 30));
 
     function update() {
 
@@ -28,16 +28,16 @@ window.onload = function () {
         // During one of the shows?
         if  (duringTest || duringMonday || duringTuesday || duringWednesday || afterRelease) {
             // This runs every few seconds during the show
-            document.getElementById("eb-timing-container").style.display='none';
-            document.getElementById("ga-timing-container").style.display='inherit';
+            document.getElementById("eb-timing-container").style.visibility='hidden';
+            document.getElementById("ga-timing-container").style.visibility='visible';
             
             console.log("Show running.")
         }
 
         // Not during a show?
         else {
-            document.getElementById("eb-timing-container").style.display='inherit';
-            document.getElementById("ga-timing-container").style.display='none';
+            document.getElementById("eb-timing-container").style.visibility='visible';
+            document.getElementById("ga-timing-container").style.visibility='hidden';
 
             console.log("Show not running.")
         }
