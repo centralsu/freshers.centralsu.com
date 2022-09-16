@@ -96,6 +96,10 @@ a.nav-link:hover {
 	background-color: var(--central-green);
 }
 
+.bg-special-darkblue {
+	background-color: var(--central-darkblue);
+}
+
 .border-special-purple {
 	border-color:  var(--central-purple);
 }

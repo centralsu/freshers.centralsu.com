@@ -1,9 +1,9 @@
 // On page load
 window.onload = function () {
 
-    var testPeriodStart     = new Date(Date.UTC(2022, 8, 16, 0, 23, 0));
-    var testPeriodEnd       = new Date(Date.UTC(2022, 8, 16, 0, 26, 0));
-    var ticketRelease       = new Date(Date.UTC(2022, 8, 16, 17, 0, 0));
+    var testPeriodStart     = new Date(Date.UTC(2022, 8, 16, 1, 0, 0));
+    var testPeriodEnd       = new Date(Date.UTC(2022, 8, 16, 1, 10, 0));
+    var ticketRelease       = new Date(Date.UTC(2022, 8, 16, 16, 0, 0));
 
     function update() {
 
@@ -18,7 +18,7 @@ window.onload = function () {
             document.getElementById("eb-timing-container").style.display='none';
             document.getElementById("ga-timing-container").style.display='flex';
             
-            console.log("General tickets available.")
+            console.log("ALL tickets available.")
         }
 
         // Not during a show?
@@ -26,7 +26,7 @@ window.onload = function () {
             document.getElementById("eb-timing-container").style.display='flex';
             document.getElementById("ga-timing-container").style.display='none';
 
-            console.log("Early bird tickets available.")
+            console.log("ONLY early bird tickets available.")
         }
     }
 
