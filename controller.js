@@ -1,7 +1,7 @@
 // On page load
 window.onload = function () {
 
-    var testPeriodStart     = new Date(Date.UTC(2022, 8, 16, 0, 25, 0));
+    var testPeriodStart     = new Date(Date.UTC(2022, 8, 16, 0, 23, 0));
     var testPeriodEnd       = new Date(Date.UTC(2022, 8, 16, 0, 26, 0));
     var ticketRelease       = new Date(Date.UTC(2022, 8, 16, 17, 0, 0));
 

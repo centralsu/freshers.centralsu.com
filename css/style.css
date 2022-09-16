@@ -1,7 +1,7 @@
 :root {
 	--central-darkblue: #216093;
 	--central-red: #dc0714;
-	--central-green: #43a756;
+	--central-darkgreen: #43a756;
 	--central-purple: #b04ec4;
 	--central-grey: #b2b2b2;
 	--central-pink: #f05097;
@@ -118,6 +118,18 @@ a.nav-link:hover {
 
 .text-special-green {
 	color: var(--central-green);
+}
+
+.text-special-red {
+	color: var(--central-red);
+}
+
+.text-special-orange {
+	color: var(--central-orange);
+}
+
+.text-special-darkgreen {
+	color: var(--central-darkgreen);
 }
 
 .cone-icon {
