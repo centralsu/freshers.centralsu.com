@@ -136,6 +136,10 @@ a.nav-link:hover {
 	color: var(--central-darkgreen);
 }
 
+.special-disabled {
+	opacity: 0.5 !important;
+}
+
 .cone-icon {
 	color: var(--central-purple);
 	/* stroke: var(--special-purple);
